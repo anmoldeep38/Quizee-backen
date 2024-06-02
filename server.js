@@ -40,10 +40,10 @@
 import app from "./app.js";
 import { connectDb } from "./database/db.js";
 
- //rest api
- app.get("/", (req, res) => {
-     res.send("<h1>Welcome to Quizee web app</h1>");
-});
+ //rest api org
+//  app.get("/", (req, res) => {
+//      res.send("<h1>Welcome to Quizee web app</h1>");
+// });
 
 connectDb()
     .then(() => {
