@@ -9,7 +9,7 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin: "https://github.com/anmoldeep38/Quizee-backen/blob/main/app.js",
+    origin: "https://majestic-gaufre-f1ff40.netlify.app/",
     credentials: true
 }))
 
