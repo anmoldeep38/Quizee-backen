@@ -35,6 +35,10 @@ app.all("*", (req, res) => {
     })
 })
 
+ app.get("/", (req, res) => {
+     res.send("<h1>Welcome to Quizee web app</h1>");
+});
+
 app.use(errorMiddleware);
 
 export default app;
