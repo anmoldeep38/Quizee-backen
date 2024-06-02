@@ -9,7 +9,7 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://github.com/anmoldeep38/Quizee-backen/blob/main/app.js",
     credentials: true
 }))
 
