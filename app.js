@@ -27,13 +27,13 @@ import quizRoutes from './routes/quiz.routes.js'
 app.use("/api/v1/account", userRoutes);
 app.use("/api/v1/quiz", quizRoutes)
 
-app.all("*", (req, res) => {
-    res.status(404).json({
-        status: 404,
-        success: false,
-        message: "!Oops page not found"
-    })
-})
+// app.all("*", (req, res) => {
+//     res.status(404).json({
+//         status: 404,
+//         success: false,
+//         message: "!Oops page not found"
+//     })
+// })
 
  app.get("/", (req, res) => {
      res.send("<h1>Welcome to Quizee web app</h1>");
