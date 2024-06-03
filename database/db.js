@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { MONGO_URI } from '../utils/constant';
+import { MONGO_URI } from '../utils/constant.js';
 
 export const connectDb = async () => {
     try {

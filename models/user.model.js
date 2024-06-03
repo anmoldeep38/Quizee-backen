@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose'
 import JWT from 'jsonwebtoken'
 import bcrypt from 'bcryptjs'
-import { ACCESS_TOKEN_SECRET } from '../utils/constant';
+import { ACCESS_TOKEN_SECRET } from '../utils/constant.js';
 
 const userSchema = new Schema({
     name: {
