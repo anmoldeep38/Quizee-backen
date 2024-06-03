@@ -39,6 +39,7 @@
 
 import app from "./app.js";
 import { connectDb } from "./database/db.js";
+import { PORT } from "./utils/constant.js";
 
  //rest api
  app.get("/", (req, res) => {
@@ -47,8 +48,8 @@ import { connectDb } from "./database/db.js";
 
 connectDb()
     .then(() => {
-        app.listen(process.env.PORT || 5000, () => {
-            console.log(`Server is running on http://localhost:${process.env.PORT || 5000}`)
+        app.listen(PORT || 5000, () => {
+            console.log(`Server is running on http://localhost:${PORT || 5000}`)
         })
     })
     .catch((error) => {

@@ -1,15 +1,15 @@
 import express from 'express'
-import dotenv from 'dotenv'
+//import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
 import errorMiddleware from './middlewares/error.middleware.js'
 import cors from 'cors'
-
-dotenv.config()
+import { FRONTEND_URL } from './utils/constant.js'
+//dotenv.config()
 
 const app = express()
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: FRONTEND_URL,
     credentials: true
 }))
 
@@ -22,6 +22,7 @@ app.use(cookieParser())
 //import routes
 import userRoutes from './routes/user.routes.js'
 import quizRoutes from './routes/quiz.routes.js'
+
 
 //routes config
 app.use("/api/v1/account", userRoutes);
