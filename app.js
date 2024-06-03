@@ -9,7 +9,7 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin: "https://665d663cc001c31abce439e0--preeminent-parfait-76a839.netlify.app",
+    origin: "https://peppy-piroshki-b96088.netlify.app",
     credentials: true
 }))
 
